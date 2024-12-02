@@ -45,7 +45,7 @@ const ProfilePage = () => {
 		queryKey: ["userProfile"],
 		queryFn: async () => {
 			try {
-				const res = await fetch(`/api/users/profile/${username}`);
+				const res = await fetch(`https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/users/profile/${username}`);
 				const data = await res.json();
 				if (!res.ok) {
 					throw new Error(data.error || "something went wrong");

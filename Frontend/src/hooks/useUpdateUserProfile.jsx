@@ -7,7 +7,7 @@ const useUpdateUserProfile = () => {
     const { mutateAsync: updateProfile, isPending: isUpdatingProfile } = useMutation({
 		mutationFn: async (formData) => {
 			try {
-				const res = await fetch("/api/users/update", {
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/users/update", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

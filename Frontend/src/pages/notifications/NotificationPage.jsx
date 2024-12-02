@@ -13,7 +13,7 @@ const NotificationPage = () => {
 		queryKey: ["notifications"],
 		queryFn: async () => {
 			try {
-				const res = await fetch("/api/notifications");
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/notifications");
 				const data = await res.json();
 				if (!res.ok) throw new Error(data.error || "something went wrong");
 				return data;
@@ -26,7 +26,7 @@ const NotificationPage = () => {
 	const { mutate: deleteNotifications } = useMutation({
 		mutationFn: async () => {
 			try {
-				const res = await fetch("/api/notifications/delete", {
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/notifications/delete", {
 					method: "DELETE",
 				})
 				const data = await res.json();

@@ -13,7 +13,7 @@ const Sidebar = () => {
 		const { mutate:logout } = useMutation({
 		mutationFn: async () => {
 			try {
-				const res = await fetch("/api/auth/logout", {
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/auth/logout", {
 					method: "POST",
 				})
 				const data = await res.json();

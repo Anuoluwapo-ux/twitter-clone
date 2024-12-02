@@ -17,7 +17,7 @@ const CreatePost = () => {
 	const { mutate: CreatePost, isPending, isError, error } = useMutation({
 		mutationFn: async ({ text, img }) => {
 			try {
-				const res = await fetch("/api/posts/create", {
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/post/create", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

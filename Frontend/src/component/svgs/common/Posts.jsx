@@ -10,15 +10,15 @@ const Posts = ({ feedType, username, userId }) => {
 	const getPostEndPoint = () => {
 		switch (feedType) {
 			case "forYou":
-				return "/api/posts/all";
+				return "https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/posts/all";
 			case "following":
-				return "/api/posts/following";
+				return "https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/posts/following";
 			case "posts":
-				return `/api/posts/user/${username}`;
+				return `https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/posts/user/${username}`;
 			case "likes":
-				return `/api/posts/likes/${userId}`
+				return `https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/posts/likes/${userId}`
 			default:
-				return "/api/posts/all";
+				return "https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/posts/all";
 		}
 	};
 
