@@ -22,7 +22,7 @@ const SignUpPage = () => {
 	const { mutate, isError, isPending, error } = useMutation({
 		mutationFn: async ({ email, username, fullName, password }) => {
 			try {
-				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=Aie9ug32saHCvnW/api/auth/signup", {
+				const res = await fetch("https://twitter-clone-backend-taupe.vercel.app/?vercelToolbarCode=-WRVt_jUZd5HfBt/auth/signup", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"
